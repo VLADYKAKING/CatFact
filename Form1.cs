@@ -27,7 +27,7 @@ namespace CatFact
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\CatFact\Database1.mdf;Integrated Security=True");
+            connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\CatFact-main\Database1.mdf;Integrated Security=True");
             connection.Open();
             if (connection.State != ConnectionState.Open)
                 MessageBox.Show("БД не подключена!");
